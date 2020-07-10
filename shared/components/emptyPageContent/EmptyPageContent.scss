@@ -1,0 +1,19 @@
+.empty-page {
+    &__wrapper {
+        margin: 44px 0;
+    }
+
+    &__empty-msg {
+        margin-top: 24px;
+        margin-bottom: 44px;
+
+        &__text {
+            text-align: center;
+        }
+    }
+
+    &__empty-content {
+        min-height: 359px;
+        background-size: contain;
+    }
+}

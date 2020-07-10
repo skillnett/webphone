@@ -1,0 +1,40 @@
+@import '../../styles/variables/colors.scss';
+@import '../../styles/fonts.scss';
+
+.conference {
+    padding: 0 24px;
+
+    &__item {
+        margin-bottom: 23px;
+
+        &__phone {
+            font-size: 22px;
+            letter-spacing: -0.54px;
+            text-align: center;
+            color: $app-page-title-color;
+            font-family: $harmoniaSansProLight;
+        }
+
+        &__decline-btn {
+            border-radius: 10px;
+            background-color: #eb4770;
+            width: 40px;
+            height: 40px;
+            margin-right: 12px;
+
+            &__img {
+                width: 19px;
+            }
+        }
+
+        &__private-btn {
+            font-size: 14px;
+            color: #fff;
+            font-family: $harmoniaSansProSemiBd;
+            width: 90px;
+            height: 40px;
+            background-color: #238cf4;
+            border-radius: 10px;
+        }
+    }
+}

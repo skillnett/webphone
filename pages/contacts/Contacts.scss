@@ -1,0 +1,33 @@
+@import '../../styles/fonts.scss';
+@import '../../styles/variables/colors.scss';
+
+.contacts {
+    margin-bottom: -1px;
+
+    &__item {
+        padding: 17px 24px;
+        border-top: 1px solid $gray-color-100;
+        cursor: pointer;
+
+        &:last-child {
+            border-bottom: 1px solid $gray-color-100;
+        }
+
+        &__number {
+            display: block;
+            padding: 2px 8px 0;
+            font-size: 14px;
+            font-family: $harmoniaSansProSemiBd;
+            border-radius: 4px;
+            max-width: max-content;
+
+            &-wrp {
+                min-width: 50px;
+            }
+        }
+
+        &__name {
+            margin-left: 23px;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+@import '../../styles/variables/colors.scss';
+@import '../../styles/fonts.scss';
+
+.account {
+    &__user-info {
+        padding-top: 26px;
+        padding-bottom: 20px;
+        background-color: #fff;
+        border-top: 1px solid $gray-color-100;
+        border-bottom: 1px solid $gray-color-100;
+
+        &__profile-btn {
+            font-size: 12px;
+            color: $app-link-color;
+        }
+
+        &__profile-name {
+            margin-bottom: 6px;
+        }
+    }
+
+    &__numbers {
+        padding: 30px 0;
+
+        &__title {
+            display: block;
+            margin-bottom: 10px;
+            margin-left: 24px;
+            font-family: $harmoniaSansProSemiBd;
+        }
+
+        &__item {
+            padding: 19px 24px 15px;
+            background-color: #fff;
+            border-top: 1px solid $gray-color-100;
+
+            &:last-child {
+                border-bottom: 1px solid $gray-color-100;
+            }
+
+            &-img {
+                width: 16px;
+                margin-right: 25px;
+            }
+        }
+    }
+}

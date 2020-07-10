@@ -1,0 +1,80 @@
+@import '../../../styles/variables/colors.scss';
+@import '../../../styles/fonts.scss';
+@import '../../../styles/variables/elementSizes.scss';
+
+.app__header {
+    position: sticky;
+    top: 0;
+    max-width: 376px;
+    width: 100%;
+    height: $app-header-height;
+    min-height: $app-header-height;
+    background-color: $app-header-color;
+    padding: 0 24px;
+    z-index: 9;
+
+    &__img-mode {
+        width: 12px;
+        height: 12px;
+    }
+
+    &__text-mode {
+        font-size: 12px;
+        font-family: $harmoniaSansProSemiBd;
+        color: #fff;
+        margin-left: 6px;
+    }
+
+    &__img-speakers {
+        width: 15px;
+
+        path {
+            fill: #fff;
+        }
+
+        &--active {
+            path {
+                fill: rgb(60, 150, 240);
+            }
+        }
+
+        &__wrapper {
+            position: relative;
+        }
+    }
+
+    &__img-music {
+        width: 14px;
+        margin-top: 15px;
+        align-self: center;
+    }
+
+    &__vol-picker {
+        height: 165px;
+
+        &__wrapper {
+            position: absolute;
+            left: -17px;
+            top: 30px;
+            width: 48px;
+            height: 226px;
+            opacity: 0.82;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px 0 rgba(172, 192, 211, 0.12);
+            background-color: $app-header-color;
+            padding: 15px 0;
+        }
+
+        &__track {
+            flex-grow: 1;
+        }
+
+        &__thumb {
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            background-color: rgb(60, 150, 240);
+            outline: none;
+        }
+    }
+}

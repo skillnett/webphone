@@ -1,0 +1,39 @@
+@import '../../../styles/fonts.scss';
+@import '../../../styles/variables/colors.scss';
+@import '../../../styles/variables/elementSizes.scss';
+
+.app__footer {
+    position: sticky;
+    max-width: 376px;
+    bottom: 0;
+    height: $app-footer-height;
+    min-height: $app-footer-height;
+    width: 100%;
+    background-color: $app-footer-color;
+    border-top: 1px solid $gray-color-100;
+    padding-top: 7px;
+
+    &__item {
+        font-size: 12px;
+        color: $app-secondary-text-color;
+        font-family: $harmoniaSansProSemiBd;
+        width: 23%;
+        height: 39px;
+
+        &--active {
+            color: $app-link-color;
+
+            &>.app__footer__item-icon path {
+                fill: $app-link-color;
+            }
+
+            &>.app__footer__item-icon g circle {
+                fill: $app-link-color;
+            }
+        }
+
+        &-name {
+            margin-top: 3px;
+        }
+    }
+}

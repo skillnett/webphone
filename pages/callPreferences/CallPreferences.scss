@@ -1,0 +1,13 @@
+@import '../../styles/variables/colors.scss';
+
+.call-preferences {
+    &__item {
+        padding: 19px 24px 15px;
+        background-color: #fff;
+        border-top: 1px solid $gray-color-100;
+
+        &:last-child {
+            border-bottom: 1px solid $gray-color-100;
+        }
+    }
+}

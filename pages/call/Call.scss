@@ -1,0 +1,233 @@
+@import '../../styles/fonts.scss';
+@import '../../styles/variables/colors.scss';
+
+.call {
+    padding-top: 36px;
+
+    &__avatar {
+        position: relative;
+        width: 137px;
+        height: 137px;
+        border-radius: 50%;
+        border: solid 1px rgb(243, 248, 252);
+        margin-bottom: 45px;
+
+        &-img {
+            width: 64px;
+            height: 64px;
+        }
+
+
+        &::before {
+            display: block;
+            content: '';
+            position: absolute;
+            width: 92px;
+            height: 92px;
+            border-radius: 50%;
+            opacity: .48;
+            border: solid 1px #85bff9;
+            left: calc(50% - 46px);
+            top: calc(50% - 46px);
+        }
+
+        &::after {
+            display: block;
+            content: '';
+            position: absolute;
+            width: 114px;
+            height: 114px;
+            border-radius: 50%;
+            opacity: .24;
+            border: solid 1px #85bff9;
+            left: calc(50% - 57px);
+            top: calc(50% - 57px);
+        }
+    }
+
+    &__phone-number {
+        color: $app-page-title-color;
+        font-size: 28px;
+        letter-spacing: -0.56px;
+        text-align: center;
+        font-family: $harmoniaSansProLight;
+        max-width: 100%;
+
+        &--merged {
+            font-size: 22px;
+        }
+    }
+
+    &__dealing {
+        color: $app-page-title-color;
+        font-size: 24px;
+        font-family: $harmoniaSansProLight;
+        text-align: center;
+
+        &-timer {
+            text-align: center;
+            color: $app-link-color;
+            font-family: $harmoniaSansProRegular;
+        }
+    }
+
+    &__action-btn {
+        min-width: 60px;
+        min-height: 53px;
+        margin: 0 20px;
+
+        &__icon {
+
+            & path,
+            & g circle {
+                fill: $gray-color-400;
+            }
+
+            &--active path,
+            &--active g circle {
+                fill: $app-link-color;
+            }
+
+            &--disabled path,
+            &--disabled g circle {
+                fill: $gray-color-300;
+            }
+        }
+
+        &__text {
+            color: $gray-color-500;
+            font-size: 9px;
+            letter-spacing: 2.16px;
+            text-transform: uppercase;
+            margin-top: 15px;
+
+            &--active {
+                color: #54a5f7;
+            }
+
+            &--disabled {
+                color: $gray-color-300;
+            }
+        }
+    }
+
+    &__actions {
+        margin: 47px 0;
+    }
+
+    &__phone-status {
+        font-size: 22px;
+        font-family: $harmoniaSansProLight;
+        max-width: 80%;
+
+        &--active {
+            color: $app-link-color;
+            font-family: $harmoniaSansProSemiBd;
+        }
+
+        &--hold {
+            color: $app-link-color;
+        }
+    }
+
+    &--hold {
+        opacity: .6;
+    }
+
+    &__info {
+        font-size: 9px;
+        color: $app-link-color;
+        text-transform: uppercase;
+        letter-spacing: 2.16px;
+        position: absolute;
+        top: -24px;
+
+        &-wrapper {
+            position: relative;
+        }
+
+        &__img {
+            width: 16px;
+            height: 16px;
+            margin-right: 10px;
+            margin-top: -2px;
+        }
+    }
+
+    &__incoming {
+        position: absolute;
+        left: 8px;
+        right: 8px;
+        top: auto;
+        bottom: 6px;
+        background-color: $app-header-color;
+        opacity: .92;
+        border-radius: 20px;
+        box-shadow: 0 2px 4px 0 rgba(172, 192, 211, 0.12);
+        padding: 16px;
+        overflow: hidden;
+
+        &__number {
+            letter-spacing: -0.54px;
+            font-size: 22px;
+            color: #fff;
+            font-family: $harmoniaSansProLight;
+            line-height: normal;
+            padding-top: 5px;
+
+            &::before {
+                display: block;
+                content: '';
+                position: absolute;
+                width: 133px;
+                height: 133px;
+                border-radius: 50%;
+                opacity: 0.15;
+                border: solid 1px #e7f2fe;
+                left: calc(50% - 66.5px);
+                top: calc(50% - 66.5px);
+            }
+
+            &::after {
+                display: block;
+                content: '';
+                position: absolute;
+                width: 167px;
+                height: 167px;
+                border-radius: 50%;
+                opacity: 0.1;
+                border: solid 1px #e7f2fe;
+                left: calc(50% - 83.5px);
+                top: calc(50% - 83.5px);
+            }
+
+            &-wrp {
+                &::before {
+                    display: block;
+                    content: '';
+                    position: absolute;
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 50%;
+                    opacity: 0.05;
+                    border: solid 1px #e7f2fe;
+                    left: calc(50% - 100px);
+                    top: calc(50% - 100px);
+                }
+
+                &::after {
+                    display: block;
+                    content: '';
+                    position: absolute;
+                    width: 238px;
+                    height: 238px;
+                    border-radius: 50%;
+                    opacity: 0.03;
+                    border: solid 1px #e7f2fe;
+                    left: calc(50% - 119px);
+                    top: calc(50% - 119px);
+                }
+            }
+        }
+    }
+}

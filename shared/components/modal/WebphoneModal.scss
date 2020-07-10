@@ -1,0 +1,48 @@
+@import '../../../styles/fonts.scss';
+
+.webphone-modal {
+    &__close {
+        position: absolute;
+        right: 22px;
+        top: 22px;
+
+        &-img {
+            width: 13px;
+        }
+    }
+
+    &__avatar {
+        width: 64px;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        font-size: 16px;
+        text-align: center;
+
+        &-wrapper {
+            text-align: center;
+        }
+
+        &--bold {
+            font-family: $harmoniaSansProSemiBd;
+            margin-left: 3px;
+        }
+    }
+
+    &__action-btn {
+        padding: 9px 24px;
+        border-radius: 10px;
+        background-color: #238cf4;
+        color: #fff;
+        margin-top: 20px;
+        font-size: 14px;
+        font-family: $harmoniaSansProSemiBd;
+
+        &-img {
+            width: 9px;
+            height: 19px;
+            margin-right: 14px;
+        }
+    }
+}

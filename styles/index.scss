@@ -1,0 +1,157 @@
+@import './fonts.scss';
+@import './variables/colors.scss';
+@import './variables/elementSizes.scss';
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $harmoniaSansProRegular, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: $app-text-color;
+    background-color: $app-body-color;
+    font-size: 15px;
+}
+
+button {
+    outline: none;
+    border: none;
+    background: none;
+    padding: 0;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+p {
+    margin: 0;
+}
+
+input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+.app {
+    &__container {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: $app-bg-color;
+        position: absolute;
+        overflow: auto;
+
+        &--mobile {
+            background-color: $app-bg-color;
+        }
+    }
+
+    &__web-container {
+        height: 666px;
+
+        .simplebar-content {
+            width: 376px;
+            height: 666px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__mobile-container {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__input {
+        padding: 12px 24px;
+        font-size: 13px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px 0 rgba(81, 118, 153, 0.04);
+        border: solid 1px #dce4ec;
+        background-color: #fdfeff;
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+
+        &__ico {
+            margin-bottom: 2px;
+            margin-right: 10px;
+            width: 10px;
+        }
+    }
+
+    &__page-header {
+        position: sticky;
+        top: $app-header-height;
+        color: $app-page-title-color;
+        background-color: $app-bg-color;
+        font-size: 18px;
+        padding: 23px 24px 15px 24px;
+
+        &__back {
+            width: 16px;
+            position: absolute;
+            left: 24px;
+        }
+
+        &__keypad {
+            left: auto;
+            right: 24px;
+
+            &-ico path {
+                fill: $gray-color-400;
+            }
+        }
+    }
+
+    &__switcher {
+        width: 32px;
+        height: 13px;
+        box-shadow: inset 0 1px 3px 0 $gray-color-300;
+        background-color: #eef2f6;
+
+        &.ant-switch-checked {
+            background-color: $app-link-color;
+            box-shadow: none;
+        }
+
+        &>.ant-switch-handle {
+            width: 17px;
+            height: 17px;
+            top: -2px;
+            left: 0;
+            border: 1px solid $gray-color-300;
+            border-radius: 50%;
+        }
+
+        &.ant-switch-checked .ant-switch-handle {
+            left: calc(100% - 14px - 2px);
+        }
+    }
+}
+
+.ReactModal__Overlay {
+    opacity: 0;
+    transition: all 250ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+.ReactModal__Overlay--before-close {
+    opacity: 0;
+}
+
+.overflow-ellipsis {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

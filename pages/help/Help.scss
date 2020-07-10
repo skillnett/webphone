@@ -1,0 +1,19 @@
+@import '../../styles/variables/colors.scss';
+
+.help {
+    &__item {
+        cursor: pointer;
+        padding: 19px 24px 15px;
+        background-color: #fff;
+        border-top: 1px solid $gray-color-100;
+
+        &:last-child {
+            border-bottom: 1px solid $gray-color-100;
+        }
+
+        &__img {
+            width: 19px;
+            margin-right: 25px;
+        }
+    }
+}

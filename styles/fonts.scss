@@ -1,0 +1,36 @@
+// HarmoniaSansPro
+@font-face {
+    font-family: 'HarmoniaSansPro-Italic';
+    font-style: italic;
+    font-display: swap;
+    src: url('../assets/fonts/HarmoniaSansPro-Italic/font.woff2'), url('../assets/fonts/HarmoniaSansPro-Italic/font.woff'), url("../assets/fonts/HarmoniaSansPro-Italic/font.ttf");
+}
+
+@font-face {
+    font-family: 'HarmoniaSansPro-Light';
+    font-style: normal;
+    font-display: swap;
+    src: url('../assets/fonts/HarmoniaSansPro-Light/font.woff2'), url('../assets/fonts/HarmoniaSansPro-Light/font.woff'), url("../assets/fonts/HarmoniaSansPro-Light/font.ttf");
+}
+
+@font-face {
+    font-family: 'HarmoniaSansPro-Regular';
+    font-style: normal;
+    font-display: swap;
+    src: url('../assets/fonts/HarmoniaSansPro-Regular/font.woff2'), url('../assets/fonts/HarmoniaSansPro-Regular/font.woff'), url("../assets/fonts/HarmoniaSansPro-Regular/font.ttf");
+}
+
+@font-face {
+    font-family: 'HarmoniaSansPro-SemiBd';
+    font-style: normal;
+    font-display: swap;
+    src: url('../assets/fonts/HarmoniaSansPro-SemiBd/font.woff2'), url('../assets/fonts/HarmoniaSansPro-SemiBd/font.woff'), url("../assets/fonts/HarmoniaSansPro-SemiBd/font.ttf");
+}
+
+$harmoniaSansProLight: 'HarmoniaSansPro-Light',
+sans-serif;
+$harmoniaSansProItalic: 'HarmoniaSansPro-Italic',
+sans-serif;
+$harmoniaSansProRegular: 'HarmoniaSansPro-Regular',
+sans-serif;
+$harmoniaSansProSemiBd: 'HarmoniaSansPro-SemiBd'

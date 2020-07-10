@@ -1,0 +1,51 @@
+@import '../../styles/variables/colors.scss';
+
+.settings {
+    height: 100%;
+
+    &__nav-item {
+        padding: 17px 24px;
+        background-color: #fff;
+        border-top: 1px solid $gray-color-100;
+        cursor: pointer;
+
+        &:nth-child(5) {
+            border-bottom: 1px solid $gray-color-100;
+        }
+
+        &__ico {
+            height: 19px;
+            margin-right: 23px;
+        }
+    }
+
+    &__select {
+        cursor: pointer;
+        border-radius: 16px;
+        border: solid 1px $gray-color-100;
+        padding: 17px 24px;
+        background-color: #fff;
+        margin: auto 24px 24px;
+
+        &__status {
+            &-ico {
+                width: 18px;
+                height: 18px;
+                margin-right: 16px;
+            }
+        }
+
+        &__ico {
+            width: 17px;
+        }
+
+        &__item {
+            padding: 17px 24px;
+            cursor: pointer;
+
+            &:not(:first-child) {
+                border-top: 1px solid $gray-color-100;
+            }
+        }
+    }
+}

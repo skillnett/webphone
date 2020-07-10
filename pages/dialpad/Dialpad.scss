@@ -1,0 +1,123 @@
+@import '../../styles/fonts.scss';
+@import '../../styles/variables/colors.scss';
+
+.dialpad {
+    &__input {
+        display: block;
+        background-color: rgb(229, 241, 254);
+        text-align: center;
+        width: 100%;
+        padding-top: 24px;
+        padding-bottom: 16px;
+        font-size: 28px;
+        font-family: $harmoniaSansProLight;
+        color: $app-page-title-color;
+        caret-color: $app-link-color;
+    }
+
+    &__keypad {
+        padding: 0 75px;
+        margin-top: 35px;
+
+        &-btn {
+            width: 40px;
+            margin-bottom: 35px;
+
+            &__number {
+                font-size: 28px;
+                letter-spacing: -0.56px;
+                text-align: center;
+                font-family: $harmoniaSansProLight;
+                color: $app-page-title-color;
+                line-height: 23px;
+            }
+
+            &__text {
+                font-size: 9px;
+                letter-spacing: 2.16px;
+                text-align: center;
+                color: $gray-color-500;
+                line-height: normal;
+                margin-top: 5px;
+            }
+        }
+
+        &__footer-wrp {
+            width: 64%;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__call-btn {
+        background: rgb(84, 165, 246);
+        background: -moz-linear-gradient(45deg, rgba(84, 165, 246, 1) 0%, rgba(35, 140, 244, 1) 0%);
+        background: -webkit-linear-gradient(45deg, rgba(84, 165, 246, 1) 0%, rgba(35, 140, 244, 1) 0%);
+        background: linear-gradient(45deg, rgba(84, 165, 246, 1) 0%, rgba(35, 140, 244, 1) 0%);
+    }
+
+    &__cancel-call-btn {
+        background-color: $app-link-color;
+        background: rgb(242, 140, 166);
+        background: -moz-linear-gradient(229deg, rgba(242, 140, 166, 1) 15%, rgba(232, 48, 80, 1) 107%);
+        background: -webkit-linear-gradient(229deg, rgba(242, 140, 166, 1) 15%, rgba(232, 48, 80, 1) 107%);
+        background: linear-gradient(229deg, rgba(242, 140, 166, 1) 15%, rgba(232, 48, 80, 1) 107%);
+    }
+
+    &__backspace {
+        &-img {
+            width: 19px;
+        }
+    }
+
+    &__select {
+        cursor: pointer;
+        border-radius: 16px;
+        border: solid 1px $gray-color-100;
+        padding: 11px 24px;
+        background-color: #fff;
+        margin: 0 74px;
+
+        &__support {
+            &-ico {
+                width: 18px;
+                height: 18px;
+                margin-right: 16px;
+            }
+
+            &-text {
+                font-size: 12px;
+                color: $gray-color-400;
+            }
+        }
+
+        &__ico {
+            width: 17px;
+        }
+
+        &__item {
+            padding: 17px 24px;
+            cursor: pointer;
+
+            &:not(:first-child) {
+                border-top: 1px solid $gray-color-100;
+            }
+        }
+    }
+
+    &__keypad-page {
+        padding-top: 64px;
+
+        &__hide-btn {
+            text-transform: uppercase;
+            font-size: 9px;
+            letter-spacing: 2.16px;
+            color: $gray-color-500;
+
+            &__ico {
+                width: 21px;
+                margin-bottom: 14px;
+                margin-right: 5px;
+            }
+        }
+    }
+}
